@@ -1,0 +1,14 @@
+.cover {
+  margin-bottom: 160px;
+}
+
+.page_title {
+  color: #d2dfee;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin-top: 64px;
+  text-align: center;
+  text-shadow: 16px 4px 64px rgba(18, 61, 101, 0.3),
+    -16px -16px 40px rgba(255, 255, 255, 0.8);
+}
