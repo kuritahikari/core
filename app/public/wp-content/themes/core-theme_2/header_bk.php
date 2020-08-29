@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/wave.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/cover.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animation.css">
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <link rel="stylesheet" href="https://use.typekit.net/nai1vii.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
