@@ -44,7 +44,7 @@ Template Name: TOPページ
 
     <section id="aboutus">
       <h2>ABOUT US</h2>
-      <h3 class="core_g">世界一やさしいWeb開発会社へ。　</h3>
+      <h3 class="core_g">世界一やさしいWeb開発会社へ。</h3>
 
       <p class=" catch core_g">
         デジタル領域に力を入れたいすべての会社の力になります。<br>
@@ -54,12 +54,88 @@ Template Name: TOPページ
         あなたのチームにデジタルな変革を促します。<br>
         世界で一番やさしいWeb開発会社を目指し続け、<br class="sp_br">
         あなたのチームの経営課題をクリエイティブに継続的にサポートします。<br>
-        ※デジタル領域の専門的な言葉をわかりやすく伝える力のこと</p>
-      <div class="bg_img"></div>
-  </div>
-  </section>
+        ※デジタル領域の専門的な言葉をわかりやすく伝える力のこと
+      </p>
+      <button class="details_btn">詳細はこちら</button>
+      <div><img src="<?php bloginfo('template_directory'); ?>/img/about_people1.png" alt=""></div>
+    </section>
   </div>
 
+  <div class="bg_gry">
+    <section id="product">
+      <h2>PRODUCT</h2>
+      <h3>コーレのプロダクト</h3>
+      <p>シンプルでわかりやすいデザインにこだわり、ユーザーの使いやすさを追求したプロダクトを開発します。</p>
+      <div class="product_lists">
+        <ul>
+          <li>
+            <div class="product">
+              <div class="product_leftBox">
+                <div class="product_header">
+                  <img src="<?php bloginfo('template_directory'); ?>/img/ariletter_logo.png" alt="">
+                  <p class="pruduct_phrase">サンクスコミュニケーションツール</p>
+                  <p class="product_name">アリレター</p>
+                  <p class="product_details">”ありがとう”が組織内で飛び交う文化を作れるツールです。 感謝を言語化できるようになることで、明るい組織風土を良質なコミュニケーションを生み出します。</p>
+                </div>
+              </div>
+              <div class="product_rightBox">
+                <img src="<?php bloginfo('template_directory'); ?>/img/ariletter_fv.png" alt="">
+                <button>サービスサイトへ<span></span></button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <div class="product_leftBox">
+                <div class="product_header">
+                  <img src="<?php bloginfo('template_directory'); ?>/img/KIANhub_logo.png" alt="">
+                  <p class="pruduct_phrase">社内のアイデアを資産にする提案管理ツール</p>
+                  <p class="product_name">KIANhub</p>
+                  <p class="product_details">
+                    提案があるたびにストックされていく知識共有ツールで、組織にイノベーションを生み出します。
+                    <br>組織内の提案被りも防ぐことができます。
+                  </p>
+                </div>
+              </div>
+              <div class="product_rightBox">
+                <img src="<?php bloginfo('template_directory'); ?>/img/KIANhub_fv.png" alt="">
+                <button>COMING SOON<span></span></button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <div class="product_leftBox">
+                <div class="product_header">
+                  <img src="<?php bloginfo('template_directory'); ?>/img/tsugikuru_logo.png" alt="">
+                  <p class="pruduct_phrase">タレントキャスティング効率化サービス 「ツギクル」</p>
+                  <p class="product_name">「ツギクル」</p>
+                  <p class="product_details">芸能プロダクションが”次に来る”イチオシのタレントを掲載するサービスです。 キャスティングをご検討する企業は、このサービスを使えば一瞬で”次に来るタレント”がわかります。</p>
+                </div>
+              </div>
+              <div class="product_rightBox">
+                <img src="<?php bloginfo('template_directory'); ?>/img/tsugikuru_fv.png" alt="">
+                <button>サービスサイトへ<span></span></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="bg_wh_1">
+    <section id="SERVICE&PLAN">
+      <h2>SERVICE&PLAN</h2>
+      <h3>Web制作/デザイン/Web開発/デジタルトランスフォーメーション推進</h3>
+      <h3>月額委託プラン/単発委託プラン</h3>
+      <p>
+        デザイナーやエンジニアが不足している全てのチームへ。 コーレでは、まるっと色々とおまかせしたい方にも、案件ごとにおまかせしたい方にも柔軟に対応できるように、「月額委託プラン」と「単発委託プラン」をご用意しています。 あなたのチームが抱える課題領域にクリエイティブなサポートを提供します。 ※Web開発はRuby on Railsが主です。
+      </p>
+      <button class="details_btn">詳細はこちら</button>
+      <div><img src="<?php bloginfo('template_directory'); ?>/img/service_people.png" alt=""></div>
+    </section>
+  </div>
+  
   <div class="bg_wh_1">
     <section id="solution">
       <h2>SOLUTION</h2>
@@ -149,6 +225,14 @@ Template Name: TOPページ
       </dl>
     </section>
   </div>
+
+
+<section id="contact">
+  <h2>CONTACT</h2>
+  <div class="contact_wrapper effect_bg " id="contactform">
+    <?php echo do_shortcode('[contact-form-7 id="15" title="お問い合わせフォーム"]'); ?>
+  </div>
+</section>
 </main>
 
 <style>
@@ -160,13 +244,6 @@ Template Name: TOPページ
 </style>
 
 
-<section id="contact">
-  <h2>CONTACT</h2>
-  <div class="contact_wrapper effect_bg " id="contactform">
-    <?php echo do_shortcode('[contact-form-7 id="15" title="お問い合わせフォーム"]'); ?>
-  </div>
-</section>
-</div>
-</main>
+
 
 <?php get_footer(); ?>
