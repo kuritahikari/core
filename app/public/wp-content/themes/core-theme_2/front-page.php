@@ -6,7 +6,7 @@ Template Name: TOPページ
 
 <?php get_header(); ?>
 
-<div class="shutter"></div>
+<!-- <div class="shutter"></div> -->
 
 <div class="fv">
   <p class="fv_text core_g"><span>世界一やさしい</span><br><span>WEB開発会社へ。</span></p>
@@ -135,7 +135,7 @@ Template Name: TOPページ
       <div><img src="<?php bloginfo('template_directory'); ?>/img/service_people.png" alt=""></div>
     </section>
   </div>
-  
+
   <div class="bg_wh_1">
     <section id="solution">
       <h2>SOLUTION</h2>
@@ -227,12 +227,12 @@ Template Name: TOPページ
   </div>
 
 
-<section id="contact">
-  <h2>CONTACT</h2>
-  <div class="contact_wrapper effect_bg " id="contactform">
-    <?php echo do_shortcode('[contact-form-7 id="15" title="お問い合わせフォーム"]'); ?>
-  </div>
-</section>
+  <section id="contact">
+    <h2>CONTACT</h2>
+    <div class="contact_wrapper effect_bg " id="contactform">
+      <?php echo do_shortcode('[contact-form-7 id="15" title="お問い合わせフォーム"]'); ?>
+    </div>
+  </section>
 </main>
 
 <style>
