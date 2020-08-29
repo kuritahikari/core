@@ -267,8 +267,7 @@ Template Name: TOPページ
   <div class="bg_gry">
     <section id="news">
       <h2>NEWS</h2>
-      <h3>新着情報</h3>
-      [showwhatsnew]
+      <?php echo do_shortcode('[showwhatsnew]');?> 
     </section>
   </div>
   <div class="bg_gry">
