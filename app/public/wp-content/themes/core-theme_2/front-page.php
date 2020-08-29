@@ -258,7 +258,7 @@ Template Name: TOPページ
             </p>
           </div>
           <div class="case_image">
-            <img src="<?php bloginfo('template_directory'); ?>/img/case03.png" alt="">
+            <img src="<?php bloginfo('template_directory'); ?>/img/case05.png" alt="">
           </div>
         </div>
       </div>
@@ -268,6 +268,7 @@ Template Name: TOPページ
     <section id="news">
       <h2>NEWS</h2>
       <h3>新着情報</h3>
+      [showwhatsnew]
     </section>
   </div>
   <div class="bg_gry">
