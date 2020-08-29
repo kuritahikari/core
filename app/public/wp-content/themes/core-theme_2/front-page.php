@@ -46,7 +46,7 @@ Template Name: TOPページ
       <h2>ABOUT US</h2>
       <h3 class="core_g">世界一やさしいWeb開発会社へ。</h3>
 
-      <p class=" catch core_g">
+      <p class="catch">
         デジタル領域に力を入れたいすべての会社の力になります。<br>
         コーレは、現代最高峰のプログラミング・デザイン教育の現場で講師を歴任し、<br class="sp_br">
         卓越したデジタル翻訳力※を持ったWebエンジニアとデザイナーで構成されたチームです。<br>
@@ -64,28 +64,32 @@ Template Name: TOPページ
   <div class="bg_gry">
     <section id="product">
       <h2>PRODUCT</h2>
-      <h3>コーレのプロダクト</h3>
+      <h3 class="core_g">コーレのプロダクト</h3>
       <p>シンプルでわかりやすいデザインにこだわり、ユーザーの使いやすさを追求したプロダクトを開発します。</p>
-      <div class="product_lists">
-        <ul>
+      <div>
+        <ul class="product_lists">
           <li>
-            <div class="product">
+            <div class="product effect_bg">
               <div class="product_leftBox">
                 <div class="product_header">
-                  <img src="<?php bloginfo('template_directory'); ?>/img/ariletter_logo.png" alt="">
+                  <div class="product_logo">
+                    <img src="<?php bloginfo('template_directory'); ?>/img/ariletter_logo.png" alt="">
+                  </div>
                   <p class="pruduct_phrase">サンクスコミュニケーションツール</p>
                   <p class="product_name">アリレター</p>
                   <p class="product_details">”ありがとう”が組織内で飛び交う文化を作れるツールです。 感謝を言語化できるようになることで、明るい組織風土を良質なコミュニケーションを生み出します。</p>
                 </div>
               </div>
               <div class="product_rightBox">
-                <img src="<?php bloginfo('template_directory'); ?>/img/ariletter_fv.png" alt="">
-                <button>サービスサイトへ<span></span></button>
+                <div class="product_fv">
+                  <img src="<?php bloginfo('template_directory'); ?>/img/ariletter_fv.png" alt="">
+                </div>
+                <a class="product_a">サービスサイトへ<span></span></a>
               </div>
             </div>
           </li>
           <li>
-            <div class="product">
+            <div class="product effect_bg">
               <div class="product_leftBox">
                 <div class="product_header">
                   <img src="<?php bloginfo('template_directory'); ?>/img/KIANhub_logo.png" alt="">
@@ -99,12 +103,12 @@ Template Name: TOPページ
               </div>
               <div class="product_rightBox">
                 <img src="<?php bloginfo('template_directory'); ?>/img/KIANhub_fv.png" alt="">
-                <button>COMING SOON<span></span></button>
+                <p class="product_comingsoon">COMING SOON</p>
               </div>
             </div>
           </li>
           <li>
-            <div class="product">
+            <div class="product effect_bg">
               <div class="product_leftBox">
                 <div class="product_header">
                   <img src="<?php bloginfo('template_directory'); ?>/img/tsugikuru_logo.png" alt="">
@@ -115,7 +119,7 @@ Template Name: TOPページ
               </div>
               <div class="product_rightBox">
                 <img src="<?php bloginfo('template_directory'); ?>/img/tsugikuru_fv.png" alt="">
-                <button>サービスサイトへ<span></span></button>
+                <p class="product_comingsoon">COMING SOON</p>
               </div>
             </div>
           </li>

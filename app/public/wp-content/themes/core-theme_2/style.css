@@ -5,87 +5,6 @@ Author: kurita
 Version: 20200825
 */
 
-/* shutter */
-
-.shutter {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    135deg,
-    #6cbbde 0%,
-    #75b8dd 10%,
-    #8db1d9 30%,
-    #b5a5d4 60%,
-    #dc99ce 100%
-  );
-  z-index: 99999;
-}
-.shutter {
-  -webkit-animation: byeShutter 2.6s forwards;
-  animation: byeShutter 2.6s forwards;
-}
-
-.shutter::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  background-color: #fff;
-  width: 0;
-  height: 1px;
-}
-
-.shutter::before {
-  -webkit-animation: shutterOpen 2.6s forwards;
-  animation: shutterOpen 2.6s forwards;
-}
-
-@keyframes byeShutter {
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-    z-index: -1;
-  }
-}
-
-@keyframes shutterOpen {
-  0% {
-    width: 0;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  90% {
-    width: 100%;
-    height: 100%;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@keyframes contentScale {
-  70% {
-    -webkit-transform: perspective(800px) scale(0.9) rotateX(15deg);
-    transform: perspective(800px) scale(0.9) rotateX(15deg);
-  }
-  100% {
-    -webkit-transform: perspective(800px) scale(1) rotateX(0);
-    transform: perspective(800px) scale(1) rotateX(0);
-  }
-}
-
 /* header */
 
 .header {
@@ -135,37 +54,63 @@ Version: 20200825
 
 /* products */
 
-.products_wrapper {
+.product {
+  width: 800px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  padding: 32px;
 }
 
-.products_txt {
-  margin-bottom: 100px;
-}
-
-.products_item {
-  text-align: center;
-  width: 300px;
-  height: 300px;
-  padding: 25px;
-  background-color: #fff;
+.product_lists li {
   margin-bottom: 64px;
 }
 
-.products_item:nth-of-type(3 + n) {
+.product_lists li:nth-child(2) {
+  margin-left: 200px;
+}
+
+.product_header {
+  width: 320px;
+}
+
+.pruduct_phrase,
+.product_name {
+  font-weight: bold;
   margin-bottom: 0;
 }
 
-.item_num {
-  font-size: 6.4rem;
-  font-weight: bold;
-  color: #8db1d9;
+.product_details {
+  font-size: 1.4rem;
 }
 
-.item_txt {
-  text-align: left;
+.product_fv {
+  width: 400px;
+}
+
+.product_a {
+  text-align: right;
+  display: block;
+  margin-top: 4rem;
+  margin-right: 20px;
+}
+
+.product_a::after {
+  content: "";
+  display: inline-block;
+  transition: all 0.3s;
+  width: 7px;
+  height: 23px;
+  box-shadow: 2px -2px 0 #506b94;
+  transform: translateY(20%) rotate(45deg) skewX(-45deg);
+  line-height: 2.4rem;
+  margin-left: 20px;
+}
+
+.product_comingsoon {
+  text-align: right;
+  display: block;
+  margin-top: 4rem;
 }
 
 /* company */
@@ -286,19 +231,6 @@ footer {
   font-size: 1.2rem;
   line-height: 80px;
   text-align: center;
-}
-
-/* view */
-
-.view {
-  opacity: 0;
-  /* transform : translate(0, 70px); */
-  transition: all 1200ms;
-  transition-delay: 0.3s;
-}
-.view.scrollin {
-  opacity: 1;
-  transform: translate(0, 0);
 }
 
 /*+++ ハンバーガー +++*/
@@ -543,21 +475,6 @@ footer {
     max-width: 600px;
   }
 
-  .products_wrapper {
-    flex-wrap: wrap;
-    width: 800px;
-    margin-left: -100px;
-  }
-
-  .products_item {
-    text-align: center;
-    margin: 0 auto 64px;
-  }
-
-  .products_item:nth-of-type(4 + n) {
-    margin-bottom: 0;
-  }
-
   .fv_copy {
     background-image: url(../img/fv_copy.png);
     background-repeat: no-repeat;
@@ -568,15 +485,6 @@ footer {
 
   .contact_wrapper {
     padding: 25px 10%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .products_wrapper {
-    flex-wrap: nowrap;
-    width: 100%;
-    margin-left: 0;
-    flex-direction: column;
   }
 }
 
@@ -603,18 +511,6 @@ footer {
 
   .catch {
     font-size: 1.4rem;
-  }
-
-  .products_wrapper {
-    flex-direction: column;
-  }
-
-  .products_item {
-    width: 90%;
-  }
-
-  .products_item:last-of-type {
-    margin-bottom: 0;
   }
 
   .contact_wrapper {
